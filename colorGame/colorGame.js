@@ -7,11 +7,16 @@ var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var modeButtons = document.querySelectorAll(".mode");
+var howToBtn = document.querySelector(".txtBtn");
 
 init();
 
 resetButton.addEventListener("click", function(){
 	reset();
+})
+
+howToBtn.addEventListener("click", function(){
+	howToPlay();
 })
 
 function  init (){
@@ -107,5 +112,17 @@ function setUpSquares(){
 				messageDisplay.textContent = "Try Again."
 			}
 		})
+	}
+}
+
+
+function howToPlay(){
+	var howToText = document.querySelector(".howPlay");	
+	if(howToText.style.color === "white") {
+		howToBtn.textContent = "How To Play";
+		howToText.style.color = "#232323";
+	} else {
+		howToText.style.color = "white";
+		howToBtn.textContent = "OK, Got It!";
 	}
 }

@@ -49,7 +49,7 @@ h1 {
 	font-size: 200%;
 }
 
-button {
+.navBtn {
 	border: none;
 	background: none;
 	text-transform: uppercase;
@@ -64,12 +64,59 @@ button {
 	outline: none;
 }
 
+.txtBtn {
+	border: none;
+	background: none;
+	color: rgb(200, 200, 200);
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+	font-family: "Montserrat";
+}
+
 #message {
 	display: inline-block;
 	width: 20%;
 }
 
-button:hover {
+.navBtn:hover {
 	color: white;
 	background: steelblue;
+}
+
+.txtBtn:hover {
+	text-decoration: underline;
+}
+
+
+.footer {
+	margin: 0;
+	text-align: right;
+	width: 97% !important;
+	float: left;
+	font-size: 13px !important;
+	height: 22px !important;
+	color: rgb(200, 200, 200) !important;
+	transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+
+}
+
+.howPlay {
+	padding: 60px 20px;
+	color: #232323;
+	transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	text-align: center;
+}
+
+a:visited {
+	color: rgb(175, 175, 175);
+}
+
+a:link {
+	color: rgb(175, 175, 175);
 }

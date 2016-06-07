@@ -13,10 +13,10 @@
 <br>Colour Game</h1>
 
 <div id="stripe">
-	<button id="reset">New Colours</button>
+	<button class="navBtn" id="reset">New Colours</button>
 	<span id="message"></span>
-	<button class="mode">Easy</button>
-	<button class="mode selected">Hard</button>
+	<button class="navBtn mode">Easy</button>
+	<button class="navBtn mode selected">Hard</button>
 </div>
 
 <div id="container">
@@ -28,6 +28,19 @@
 	<div class="square"></div>
 </div>
 
+
+<div class="howPlay">
+	<p>The game is quite simple. Choose either 3 or 6 squares with Easy or Hard, and try to guess which colour matches the RGB color given at the top.</p>
+	<p>The first number corresponds to how much Red is in the correct colour, between 0 (none at all) and 255 (as much as possible). The next number represents Green, and the last is Blue. Based on this, try to guess which colour square is the correctly matching one.</p>
+</div>
+
+
+<p class="footer"><button class="txtBtn">How to Play</button></p>
+<p class="footer">Coded 2016 for <a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview">The Web Developer Bootcamp</a></p>
+<p class="footer">Return to <a href="../index.html">jcraighimself</a></p>
+
 <script type="text/javascript" src="colorGame.js"></script>
+
 </body>
+
 </html>
