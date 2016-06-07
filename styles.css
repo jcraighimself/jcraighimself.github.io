@@ -1,0 +1,113 @@
+html {
+	height: 100%;
+}
+
+body {
+	background: url("https://images.unsplash.com/photo-1445462864446-6c6945690841?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9767d04a66e5e8e09108ffc2b586a2b2");
+	background-size: cover;
+	background-position: center top;
+	color: white;
+	font-family: Muli;
+}
+
+/*Reducing the height of the NavBar*/
+.navbar-nav > li > a, .navbar-brand {
+	padding-top:10px !important; 
+	padding-bottom:5px !important;
+	height: 36px;
+}
+.navbar {
+	min-height:38px !important
+}
+ 
+#content1 {
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.7),
+		 		 0px 8px 13px rgba(0,0,0,0.3),
+		 		 0px 18px 23px rgba(0,0,0,0.3);
+}
+#content2 {
+	text-align: center;
+	padding-top: 15%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.7),
+		 		 0px 8px 13px rgba(0,0,0,0.3),
+		 		 0px 18px 23px rgba(0,0,0,0.3);
+}
+
+/*Changing the background of the BS nav*/
+.navbar-inverse {
+	background: rgba(0,28,59,0.5);
+	font-size: 20px;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	background-color: rgba(0,28,59,0.7) !important;
+}
+
+/*Changing font size for right nav buttons*/
+#rightNav {
+	font-size: 1.1em;
+	padding-bottom: 2px;
+}
+
+.navbar-brand {
+	font-family: Cambay;
+	padding-top: 2px;
+	font-size: 26px;
+}
+h1 {
+	font-family: Cambay;
+	font-weight: 700;
+	font-size: 7.0em;
+}
+h2 {
+	font-size: 12.0em;
+}
+
+h4 {
+	font-size: 2.3em;
+}
+
+#sitemap:hover, #grad:hover, #usd:hover {
+	padding-top: 2px;
+	/*padding-right: 2px;*/
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+		 		 0px 8px 13px rgba(0,0,0,0.6),
+		 		 0px 18px 23px rgba(0,0,0,0.4);
+}
+
+#footer {
+	padding-top: auto;
+	text-align: center !important;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.7),
+		 		 0px 8px 13px rgba(0,0,0,0.3),
+		 		 0px 18px 23px rgba(0,0,0,0.3);
+}
+
+#navbarSpecial {
+	font-size: 12px !important;
+	font-color: #929292;
+}
+/*Font Testing*/
+/*#try1 {
+	font-size: 6.0em;
+	font-family: Poppins;
+}
+#try2 {
+	font-size: 6.0em;
+	font-family: Hind+Vadodara;
+}
+#try3 {
+	font-size: 6.0em;
+	font-family: Cambay;
+}
+#try4 {
+	font-size: 6.0em;
+	font-family: Muli;
+}
+#try5 {
+	font-size: 6.0em;
+	font-family: Palanquin+Dark;
+}
+
+*/
