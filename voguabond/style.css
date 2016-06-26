@@ -1,0 +1,32 @@
+#header {
+    background:url('https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=18b277cdf966f5a782a14f6adf300fe8') no-repeat center center;
+    background-size: cover;
+    height: 100px;
+    opacity: 0.8;
+}
+
+#main-body-content {
+	padding-top: 10px;
+}
+
+#navbar-vb {
+	font-size: 0.6em;
+	display: inline-block;
+}
+
+#clothing-thumb {
+	max-height: 400px;
+}
+
+#headshot {
+	max-height: 250px;
+}
+
+#searchbar {
+	width: 200px;
+}
+
+#navbarimg {
+	height: 30px;
+	margin-top: -6px;
+}
