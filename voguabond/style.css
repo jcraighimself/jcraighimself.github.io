@@ -1,3 +1,6 @@
+body {
+	padding-top: 70px;
+}
 #header {
     background:url('https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=18b277cdf966f5a782a14f6adf300fe8') no-repeat center center;
     background-size: cover;
