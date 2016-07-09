@@ -1,6 +1,6 @@
 /* FRAMEWORK ELEMENTS */
 
-html {
+#body {
     font-family: 'Montserrat', 'Arial', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -9,6 +9,7 @@ html {
     color: #eee;
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
+    background-color: #fff;
 }
 
 /* DIVISIONAL ELEMENTS */
@@ -38,7 +39,7 @@ header {
 }
 
 .headline_btns {
-    margin-top: 55px;
+    margin-top: 47px;
     float: right;
     max-width: 380px;
     text-align: right;
@@ -63,11 +64,15 @@ header h2 {
     font-size: 1.6em;
 }
 
+nav i {
+    font-size: 1.8em;
+}
+
 /* FUNCTIONAL ELEMENTS */
 
 .headline a {
     margin-right: 60px;
-    letter-spacing: 12px;
+    letter-spacing: 6px;
 }
 
 .headline a:link,
@@ -76,15 +81,15 @@ header h2 {
     padding: 10px;
     margin: 12px;
     display: inline-block;
-    border: 3px solid #2ecc71;
-    color: #2ecc71;
+    border: 3px solid #16a085;
+    color: #16a085;
     border-radius: 20px;
     text-decoration: none
 }
 
 .headline a:hover,
 .headline a:active {
-    background-color: #2ecc71;
+    background-color: #16a085;
     color: #111;
     transition: background-color 0.2s, color 0.2s;
 }
@@ -106,15 +111,37 @@ header h2 {
     display: inline-block;   
 }
 
-.navbar_links a {
+#body .navbar_links a,
+#body .navbar_links a:visited {
     margin-right: 20px;
-    padding-bottom: 3px;
+    padding: 16px;
     color: #eee;
     text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.navbar_links a:hover,
-.navbar_links a:active {
-    border-bottom: 1px solid #eee;
-    transition: border-bottom 0.2s;
+#body .navbar_links a:hover,
+#body .navbar_links a:active {
+    background-color: #16a085;
+    transition: background-color 0.3s;
+}
+
+/* DROPDOWN ELEMENTS */
+
+#body .login_dropdown {
+    background-color: rgba(255, 255, 255, 0.68);
+    border-radius: 5px;
+    color: #222;
+    width: 20vw;
+    padding: 6px;
+}
+
+#body .login_dropdown input {
+    width: 100%;
+    padding: 0 5px;
+}
+
+#body .dropdown_link {
+    text-align: center;
+    color: #16a085;
 }
