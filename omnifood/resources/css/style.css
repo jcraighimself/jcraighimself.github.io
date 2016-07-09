@@ -15,6 +15,11 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -117,12 +122,17 @@ h3 {
     margin-bottom: 30px;
 }
 
+.negative-list {
+    text-decoration: line-through;
+}
+
 /* ----------------------------------------- */
 /* BUTTON SETUP */
 /*------------------------------------------ */
 
 .btn:link, 
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -132,7 +142,8 @@ h3 {
 }
 
 .btn-full:link, 
-.btn-full:visited  {
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #eee;
@@ -146,7 +157,9 @@ h3 {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:active,
+input[type=submit]:hover {
     background-color: #de7519;
     border: 1px solid #de7519;
     color: #eee;
@@ -386,4 +399,176 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
     
+}
+
+/* ----------------------------------------- */
+/* PLANS */
+/*------------------------------------------ */
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #e9e9e9;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
+}
+
+.plan-price {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 0.4em;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 0.8em;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+/* ----------------------------------------- */
+/* CONTACT FORM */
+/*------------------------------------------ */
+
+.contact-form {
+    width: 65%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 130px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* ----------------------------------------- */
+/* FOOTER */
+/*------------------------------------------ */
+
+footer {
+    background-color: #333;
+    padding: 35px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin: 0;
+} 
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited,
+#udemy-link:link, 
+#udemy-link:visited {
+    color: #888;
+    border: 0;
+    text-decoration: none;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active,
+#udemy-link:active, 
+#udemy-link:hover {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 1em;
+}
+
+.ion-social-facebook:hover,
+.ion-social-facebook:visited {
+    color: #3b5998;
+}
+
+.ion-social-instagram:hover,
+.ion-social-instagram:visited {
+    color: #517fa4;
+}
+
+.ion-social-googleplus:hover,
+.ion-social-googleplus:visited {
+    color: #dd4b39;
+}
+
+.ion-social-twitter:hover,
+.ion-social-twitter:visited {
+    color: #55acee;
+}
+
+footer p {
+    margin-top: 30px;
+    color: #888;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.copyright i {
+    margin: 0 5px;
 }
