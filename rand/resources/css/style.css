@@ -1,0 +1,108 @@
+/* FRAMEWORK ELEMENTS */
+
+html {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: #222;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+/* DIVISIONAL ELEMENTS */
+
+header {
+    height: 100vh;
+    background-color: green;
+}
+
+.row {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.headline {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.headline_text {
+    float: left;
+    padding-left: 50px;
+}
+
+.headline_btns {
+    margin-top: 55px;
+/*    margin-right: 50px;*/
+    float: right;
+}
+
+/* TYPOGRAPHICAL ELEMENTS */
+
+h1, h2 {
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 3.0em;
+    letter-spacing: 4px;
+}
+
+/* FUNCTIONAL ELEMENTS */
+
+.headline a {
+    margin-right: 60px;
+}
+
+.headline a:link,
+.headline a:visited {
+    font-size: 1.6em;
+    padding: 10px;
+    display: inline;
+    border: 3px solid #222;
+    color: #222;
+    border-radius: 200px;
+    text-decoration: none
+}
+
+.headline a:hover,
+.headline a:active {
+    background-color: #222;
+    color: #eee;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* NAVBAR ELEMENTS */
+
+.row h3 {
+    float: left;
+    padding-left: 30px;
+}
+
+.navbar_links {
+    float: right;
+    list-style: none;
+}
+
+.navbar_links li {
+    display: inline-block;   
+}
+
+.navbar_links a {
+    margin-right: 20px;
+    padding-bottom: 3px;
+    color: #222;
+    text-decoration: none;
+}
+
+.navbar_links a:hover,
+.navbar_links a:active {
+    border-bottom: 1px solid #222;
+    transform: border-bottom 0.2s;
+}

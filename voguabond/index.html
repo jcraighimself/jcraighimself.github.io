@@ -14,6 +14,7 @@
 <!-- UPPER NAV -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
+
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -28,6 +29,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop By <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Tops</a></li>
+            <li><a href="#">Pants</a></li>
+            <li><a href="#">Jackets</a></li>
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Upcyclists <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -61,7 +70,7 @@
 
 
 <!-- Main Content Container -->
-<div class="container-fluid" id="main-body-content">
+<div class="container" id="main-body-content">
 <div class="row">
 
 	<!-- Side Navbar -->
@@ -70,6 +79,7 @@
 			<li class="list-group-item">
           <img class="img-responsive img-circle" src="https://s-media-cache-ak0.pinimg.com/736x/66/8a/65/668a65d175222a81dbb6932227f32b33.jpg" id="headshot">
           <p class="lead text-center">Jane Doe</p>
+          <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in justo dapibus tellus ullamcorper maximus. Etiam et cursus purus. Praesent sit amet lectus bibendum, dignissim tortor et, porttitor diam. Proin mi neque, molestie ut ultrices sed, luctus sit amet quam. Quisque malesuada aliquet lacus sit amet gravida. Proin malesuada sapien sit amet sem pharetra, sed consectetur arcu venenatis. Aenean non lectus scelerisque, vestibulum mi condimentum, molestie nulla. Sed lacinia ipsum orci, id semper nisl eleifend a. Donec at laoreet felis. Etiam eu metus eu mauris fringilla bibendum ac eu orci. Phasellus venenatis nibh purus, sit amet tempor ex posuere non. Morbi ornare velit vitae viverra feugiat. Nulla sed justo vel quam facilisis congue in id risus. Donec dui diam, interdum eget tortor ut, condimentum vulputate orci.</small></p>
       </li>
 			<li class="list-group-item"><i class="fa fa-search" aria-hidden="true"></i> Find more pieces by Jane Doe</li>
 			<li class="list-group-item"><i class="fa fa-user" aria-hidden="true"></i> Jane Doe's Profile</li>
@@ -79,21 +89,27 @@
 
 	<!-- Main Page Content -->
 	<div class="col-md-9 col-sm-9 col-xs-7">
-       	<div class="thumbnail">
-       		<div class="row">
-       			<div class="col-md-8 col-sm-8">
-       				<p class="lead text-center" id="description-text"><strong>Denim Jacket</strong> by <em>Jane Doe</em></p>
-       				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in justo dapibus tellus ullamcorper maximus. Etiam et cursus purus. Praesent sit amet lectus bibendum, dignissim tortor et, porttitor diam. Proin mi neque, molestie ut ultrices sed, luctus sit amet quam. Quisque malesuada aliquet lacus sit amet gravida. Proin malesuada sapien sit amet sem pharetra, sed consectetur arcu venenatis. Aenean non lectus scelerisque, vestibulum mi condimentum, molestie nulla. Sed lacinia ipsum orci, id semper nisl eleifend a. Donec at laoreet felis. Etiam eu metus eu mauris fringilla bibendum ac eu orci. Phasellus venenatis nibh purus, sit amet tempor ex posuere non. Morbi ornare velit vitae viverra feugiat. Nulla sed justo vel quam facilisis congue in id risus. Donec dui diam, interdum eget tortor ut, condimentum vulputate orci.</p>
-       			</div>
-       			<div class="col-md-4 col-sm-4">
-       				<img src="http://rbk.h-cdn.co/assets/cm/14/51/480x640/548f01ed333e5_-_rbk-jean-jackets-madewell-storm-cloud-wash-s2.jpg" class="img-responsive center-block" id="clothing-thumb">
-       			</div>
-       		</div>
-               
-            
+    <div class="">
+      <p class="text-center">Jane Doe's Closet</p>
+      <div class="row">
+
+        <div class="col-md-4 thumbnail">
+          <img class="img-responsive" src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=163139982">
+          <div class="caption-full">
+            <p>Denim Jacket</p>
+          </div>
         </div>
+        
+      </div>
     </div>
+  </div>
 </div>
+
+<!-- FOOTER MARKUP -->
+<div class="row">
+  <p class="text-center">c 2016 Voguabond</p>
+</div>
+
 </div>
 </body>
 </html>
