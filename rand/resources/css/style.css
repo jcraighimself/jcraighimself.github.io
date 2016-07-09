@@ -6,7 +6,7 @@ html {
     font-weight: 400;
     padding: 0;
     margin: 0;
-    color: #222;
+    color: #eee;
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
 }
@@ -15,7 +15,9 @@ html {
 
 header {
     height: 100vh;
-    background-color: green;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/bg7.jpg'); */
+    background-size: cover;
+    background-position: center;
 }
 
 .row {
@@ -32,49 +34,58 @@ header {
 }
 
 .headline_text {
-    float: left;
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 .headline_btns {
     margin-top: 55px;
-/*    margin-right: 50px;*/
     float: right;
+    max-width: 380px;
+    text-align: right;
+    
 }
 
 /* TYPOGRAPHICAL ELEMENTS */
 
-h1, h2 {
-    margin-top: 0;
+header h1, 
+header h2 {
+    margin: 0, auto;
+    padding-left: 8%;
     letter-spacing: 2px;
 }
 
-h1 {
-    font-size: 3.0em;
-    letter-spacing: 4px;
+header h1 {
+    font-size: 4.0em;
+    letter-spacing: 12px;
+}
+
+header h2 {
+    font-size: 1.6em;
 }
 
 /* FUNCTIONAL ELEMENTS */
 
 .headline a {
     margin-right: 60px;
+    letter-spacing: 12px;
 }
 
 .headline a:link,
 .headline a:visited {
     font-size: 1.6em;
     padding: 10px;
-    display: inline;
-    border: 3px solid #222;
-    color: #222;
-    border-radius: 200px;
+    margin: 12px;
+    display: inline-block;
+    border: 3px solid #2ecc71;
+    color: #2ecc71;
+    border-radius: 20px;
     text-decoration: none
 }
 
 .headline a:hover,
 .headline a:active {
-    background-color: #222;
-    color: #eee;
+    background-color: #2ecc71;
+    color: #111;
     transition: background-color 0.2s, color 0.2s;
 }
 
@@ -83,6 +94,7 @@ h1 {
 .row h3 {
     float: left;
     padding-left: 30px;
+    letter-spacing: 4px;
 }
 
 .navbar_links {
@@ -97,12 +109,12 @@ h1 {
 .navbar_links a {
     margin-right: 20px;
     padding-bottom: 3px;
-    color: #222;
+    color: #eee;
     text-decoration: none;
 }
 
 .navbar_links a:hover,
 .navbar_links a:active {
-    border-bottom: 1px solid #222;
-    transform: border-bottom 0.2s;
+    border-bottom: 1px solid #eee;
+    transition: border-bottom 0.2s;
 }
