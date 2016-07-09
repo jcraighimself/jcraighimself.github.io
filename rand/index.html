@@ -17,7 +17,7 @@
         <header id="header">
             <div class="container">
                
-                <nav>
+                <nav class="navbar navbar-default">
                    <div class="row">
                     
                        <div class="navbar-header">
@@ -31,12 +31,12 @@
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar navbar_links">
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a class="nav_link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a class="nav_link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a class="nav_link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a class="nav_link" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+                                  <a href="#" class="dropdown-toggle nav_link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
                                   <ul class="dropdown-menu login_dropdown">
                                     <h5>Please enter your e-mail and password.</h5>
                                     <form action="">
@@ -46,9 +46,15 @@
                                         <input id="login_pwd" type="email" placeholder="Please enter your password">
                                     </form>
                                     <h5 class="dropdown_link">New? Sign-up here.</h5>
+                                    <h6 class="dropdown_text">Or, you can login using one of these services:</h6>
+                                    <div class="login_icons">
+                                        <a href="#"><i class="fa fa-facebook-square login_icon" aria-hidden="true" id="fb_login"></i></a>
+                                        <a href="#"><i class="fa fa-twitter-square login_icon" aria-hidden="true" id="twit_login"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus-square login_icon" aria-hidden="true" id="goog_login"></i></a>
+                                    </div>
                                   </ul>
                                 </li>
-                                <li><a href="#">Sign Up</a></li>
+                                <li><a class="nav_link" href="#">Sign Up</a></li>
                             </ul>
                        </div>
                    </div>

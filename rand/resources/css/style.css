@@ -12,6 +12,11 @@
     background-color: #fff;
 }
 
+#body .navbar {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
 /* DIVISIONAL ELEMENTS */
 
 header {
@@ -68,6 +73,10 @@ nav i {
     font-size: 1.8em;
 }
 
+.dropdown_text {
+    text-align: center;
+}
+
 /* FUNCTIONAL ELEMENTS */
 
 .headline a {
@@ -120,8 +129,8 @@ nav i {
     background-color: rgba(0, 0, 0, 0);
 }
 
-#body .navbar_links a:hover,
-#body .navbar_links a:active {
+#body .nav_link:hover,
+#body .nav_link:active {
     background-color: #16a085;
     transition: background-color 0.3s;
 }
@@ -133,7 +142,7 @@ nav i {
     border-radius: 5px;
     color: #222;
     width: 20vw;
-    padding: 6px;
+    padding: 6px 9px;
 }
 
 #body .login_dropdown input {
@@ -144,4 +153,31 @@ nav i {
 #body .dropdown_link {
     text-align: center;
     color: #16a085;
+}
+
+#body ul li:hover > a {
+    background-color: #16a085;
+}
+
+#body .login_icons {
+    margin: auto;
+    text-align: center;
+}
+
+#body .login_icon {
+    font-size: 4.0em;
+    transition: color 0.3s;
+    padding-bottom: 10px;
+}
+
+#fb_login:hover {
+    color: #3b5998;
+}
+
+#twit_login:hover {
+    color: #55acee;
+}
+
+#goog_login:hover {
+    color: #ea4335;
 }
