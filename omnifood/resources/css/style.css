@@ -41,6 +41,7 @@ body {
 }
 
 header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -53,6 +54,7 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -138,6 +140,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -182,6 +185,14 @@ input[type=submit]:hover {
     margin-top: 20px;
 }
 
+.logo-black {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+    display: none;
+}
+
 .main-nav {
     float: right;
     list-style: none;
@@ -193,6 +204,7 @@ input[type=submit]:hover {
     margin-left: 40px;
 }
 
+/* Main unstickied NAV */
 .main-nav li a:link,
 .main-nav li a:visited {
     padding: 8px, 0;
@@ -201,6 +213,7 @@ input[type=submit]:hover {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
     padding: 6px 0;
 }
@@ -209,6 +222,52 @@ input[type=submit]:hover {
 .main-nav li a:active {
     
     border-bottom: 2px solid #e67e22
+}
+
+/* Stickied Nav */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #ededed;
+    z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 15px, 0;
+    color: #555;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+.sticky .main-nav {
+    margin-top: 15px;
+}
+
+/* MOBILE NAV */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+    border-bottom: 0;
+}
+
+.mobile-nav-icon:link, .mobile-nav-icon:visited {border: 0;}
+
+.mobile-nav-icon i {
+    font-size: 2em;
+    color: #fff;
 }
 
 /* ----------------------------------------- */
@@ -226,12 +285,17 @@ input[type=submit]:hover {
 .meal-photo img {
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
     opacity: 0.6;
 }
 
 .meal-photo img:hover {
+    -webkit-transform: scale(1.05);
     transform: scale(1.05);
     opacity: 1;
 }
@@ -268,6 +332,7 @@ a:hover,
 a:active {
     color: #555;
     border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -363,6 +428,7 @@ a:active {
 /*------------------------------------------ */
 
 .section-testimonials {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/back-customers.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/back-customers.jpg");
     background-size: cover;
     background-position: center;
@@ -521,8 +587,8 @@ footer {
 .footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited,
-#udemy-link:link, 
-#udemy-link:visited {
+#course-link:link, 
+#course-link:visited {
     color: #888;
     border: 0;
     text-decoration: none;
@@ -532,8 +598,8 @@ footer {
 .footer-nav li a:active,
 .social-links li a:hover,
 .social-links li a:active,
-#udemy-link:active, 
-#udemy-link:hover {
+#course-link:active, 
+#course-link:hover {
     color: #ddd;
 }
 
@@ -571,4 +637,25 @@ footer p {
 
 .copyright i {
     margin: 0 5px;
+}
+
+/* ----------------------------------------- */
+/* ANIMATIONS */
+/*------------------------------------------ */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
