@@ -33,7 +33,7 @@
         margin-left: 0;
     }
     .plan-price { font-size: 200%; }
-    .contact-form { width: 80%; }
+    .contact-form { width: 90%; }
 }
 
 /* Small phones to small tablets */
@@ -119,8 +119,17 @@
     .sticky .main-nav {margin-top: 10px;}
     .sticky .mobile-nav-icon {margin-top: 10px;}
     .sticky .mobile-nav-icon i {color: #555;}
-
+    
+    .map {height: 300px;}
+    .map-box {height: auto;}
+    .form-box {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 30px 0;
     }
+
+}
 
 /* For small phones 0 - 480px */
 @media only screen and (max-width: 480px) {
