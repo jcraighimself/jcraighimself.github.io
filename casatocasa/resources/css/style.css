@@ -1,0 +1,46 @@
+html,
+body {
+    height: 100%;
+}
+
+/* ===== COVER =======*/
+#cover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/house-desat.jpg);
+    background-size: cover;
+    color: #eee;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;    
+}
+
+#cover-caption {
+    width: 100%;
+}
+
+.btn-casa {
+}
+
+.btn-active {
+	background-color: #e67e22;
+}
+
+.btn-active:hover {
+	background-color: #b05d14;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+
+.btn-inactive {
+	background: transparent;
+	outline: none;
+	border: 2px solid #e67e22;
+	color: #eee;
+}
+
+.btn-inactive:hover {
+	background-color: #e67e22;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
