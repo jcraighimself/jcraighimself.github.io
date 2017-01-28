@@ -3,20 +3,45 @@ body {
     height: 100%;
 }
 
-/* ===== COVER =======*/
+/* ===== SECTIONS =======*/
+section {
+	text-align: center;
+    display: flex;
+    align-items: center;
+}
+
 #cover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/house-desat.jpg);
     background-size: cover;
     color: #eee;
-    height: 92.5%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    color: #eee;    
+    height: 92vh;
+   
+}
+
+#disclaimer {
+	background-color: #eee;
+	height: 77vh;
 }
 
 #cover-caption {
     width: 100%;
+}
+
+footer {
+	text-align: center;
+    display: flex;
+    align-items: center;
+	background-color: #333;
+	height: 23vh;
+	color: #eee;
+}
+
+.shadowText {
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 
 .btn-active {
@@ -37,7 +62,6 @@ body {
 	background-color: #b05d14;
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
-
 }
 
 
@@ -59,5 +83,42 @@ body {
 }
 
 #welcomeDiv {
+	position: relative;
 	display: none;
+	background-color: rgba(255, 255, 255, 0.0); 
+}
+
+#mc_embed_signup {
+	clear:left; 
+	font:14px Helvetica,Arial,sans-serif;
+	padding: 0;
+}
+
+#submitBtn.clear {
+	padding: 0;
+}
+
+#submitBtn {
+	margin: 0;
+}
+
+#mc_embed_signup input.email {
+	margin-top: 3px;
+}
+
+#signupDropdown {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 366px;
+}
+
+#databaseP {
+	margin-top: 10px;
+}
+
+.discIcon {
+	font-size: 12em;
+}
+
+.footIcon {
+	font-size: 1.5em;
 }
